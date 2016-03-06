@@ -1,0 +1,561 @@
+/* General */
+body {
+	font-family: "Open Sans", sans-serif;
+	font-size: 13px;
+}
+input:focus {
+	border: none;
+	outline: none;
+}
+textarea {
+	resize: vertical;
+}
+.row {
+	margin-top: 20px;
+}
+.row > div {
+	padding: 0px 10px;
+}
+li {
+	list-style: none;
+}
+.noselect {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.border-glow {
+	outline: none;
+	border-color: #9ecaed;
+	box-shadow: 0 0 4px #00A1FF;
+}
+
+/* Bootstrap mods and overrides */
+.container {
+	width: 90%;
+	min-width: 800px;
+}
+.dropdown-menu:before {
+  position: absolute;
+  top: -9px;
+  left: 9px;
+  display: inline-block;
+  border-right: 9px solid transparent;
+  border-bottom: 9px solid #ccc;
+  border-left: 9px solid transparent;
+  border-bottom-color: rgba(0, 0, 0, 0.2);
+  content: '';
+}
+.dropdown-menu:after {
+  position: absolute;
+  top: -8px;
+  left: 10px;
+  display: inline-block;
+  border-right: 8px solid transparent;
+  border-bottom: 8px solid #ffffff;
+  border-left: 8px solid transparent;
+  content: '';
+}
+.dropdown-menu > li > a:hover {
+	background-image: linear-gradient(to bottom, rgb(0, 136, 204), rgb(0, 119, 179));
+	background-color: rgb(0, 129, 194);
+	color: #fff;
+}
+#comments-header .tooltip-inner {
+    max-width: 150px;
+    width: 150px;
+}
+
+/* Header */
+#header {
+	width: 100%;
+	height: 60px;
+	background-color: #efefef;
+	border-bottom: 1px solid #e0e0e0;
+	margin-bottom: 20px;
+}
+#logo {
+	float: left;
+	font-family: Comic Sans, Comic Sans MS, cursive;
+	font-size: 26px;
+	color: #FFAE18;
+	cursor: pointer;
+	padding: 10px;
+}
+#user-controls {
+	float: right;
+	padding: 10px;
+}
+#user-controls > div {
+	margin-left: 30px;
+}
+#search {
+	width: 250px;
+	border: 1px solid #eee;
+	height: 30px;
+	position: relative;
+	border-radius: 10px;
+	background-color: #fff;
+	float: right;
+	margin-top: 8px;
+}
+#search input {
+	font-size: 14px;
+	border: none;
+	width: 100%;
+	height: inherit;
+	padding: 5px 5px 5px 25px;
+	background-color: transparent;
+}
+#search  i {
+	position: absolute;
+	left: 6px;
+	top: 6px;
+	cursor: pointer;
+}
+#user-account {
+	float: left;
+}
+#user-account > img {
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	cursor: pointer;
+}
+#user-account > .dropdown-menu {
+	margin: 10px 0px 0px;
+}
+
+/* Main page content */
+.content-container {
+	-webkit-box-shadow: 3px 3px 10px 0px rgba(136,68,68,0.75);
+    -moz-box-shadow: 3px 3px 10px 0px rgba(68,68,68,0.75);
+    box-shadow: 3px 3px 10px 0px rgba(136,136,136,0.75);
+}
+
+/* Header layer */
+#header-container {
+	position: relative;
+}
+#video-title {
+	display: inline-block;
+}
+#video-title > h2 {
+	margin-bottom: 0px;
+	margin-right: 10px;
+	display: inline;
+}
+#video-title > span {
+	display: inline;
+	font-style: italic;
+	color: #00aced;
+	font-size: 15px;
+}
+#sharable {
+	color: #fff;
+	padding: 15px 15px 0px;
+	position: absolute;
+	bottom: 0;
+	right: 0;
+}
+#sharable > button {
+	margin-left: 5px;
+}
+.share-facebook {
+	background-color: #2b4170; /* fallback color */
+	background: -moz-linear-gradient(top, #3b5998, #2b4170);
+	background: -ms-linear-gradient(top, #3b5998, #2b4170);
+	background: -webkit-linear-gradient(top, #3b5998, #2b4170);
+	border: 1px solid #2b4170;
+	text-shadow: 0 -1px -1px #1f2f52;
+}
+.share-facebook:hover {
+	background-color: #3b5998; /* fallback color */
+	background: -moz-linear-gradient(top, #2b4170, #3b5998);
+	background: -ms-linear-gradient(top, #2b4170, #3b5998);
+	background: -webkit-linear-gradient(top, #2b4170, #3b5998);
+	color: #fff;
+}
+.share-facebook:focus {
+	color: #fff;
+}
+.share-twitter {
+	background-color: #0081ce; /* fallback color */
+	background: -moz-linear-gradient(top, #00aced, #0081ce);
+	background: -ms-linear-gradient(top, #00aced, #0081ce);
+	background: -webkit-linear-gradient(top, #00aced, #0081ce);
+	border: 1px solid #0081ce;
+	text-shadow: 0 -1px -1px #005ea3;
+}
+.share-twitter:hover {
+	background-color: #00aced; /* fallback color */
+	background: -moz-linear-gradient(top, #0081ce, #00aced);
+	background: -ms-linear-gradient(top, #0081ce, #00aced);
+	background: -webkit-linear-gradient(top, #0081ce, #00aced);
+	color: #fff;
+}
+.share-twitter:focus {
+	color: #fff;
+}
+
+/* Presentation layer */
+#presentation-container {
+	max-height: 720px;
+	position: relative;
+}
+#video-container {
+	max-width: 1400px;
+}
+#video-container > div {
+	position: relative;
+	padding-bottom: 56.25%;
+	padding-top: 30px;
+	height: 0;
+	overflow: hidden;
+}
+#video {
+	background-color: black;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+#questions-container {
+	position: absolute;
+	top: 0;
+	right: 0;
+	height: 100%;
+}
+#questions {
+	background-color: #fff;
+	height: inherit;
+	overflow-y: auto;
+	padding: 0px;
+	margin: 0px;
+}
+.commands {
+	padding: 25px;
+	position: absolute;
+	top: 0;
+	right: 0;
+	color: #777;
+}
+.commands > i {
+	cursor: pointer;
+}
+#questions .content {
+	font-size: 12px;
+	padding-right: 53px;
+}
+.question {
+	height: 70px;
+	border-bottom: 1px solid #eee;
+	position: relative;
+	cursor: pointer;
+	overflow: hidden;
+}
+.question:hover {
+	background-color: #efefef;
+}
+.question p {
+	padding: 5px 0px;
+	margin: 0px;
+}
+.media-channel {
+	float: left;
+}
+.media-channel > i {
+	padding: 20px;
+	font-size: 1.5em;
+}
+.media-channel > .fa-twitter {
+	color: #00aced;
+}
+.media-channel > .fa-facebook {
+	color: #3b5998;
+}
+.media-channel > .fa-video-camera {
+	color: tomato;
+}
+.media-channel > .fa-pencil {
+	color: #0da00c;
+}
+.user {
+	font-weight: 700;
+}
+#overlay-template {
+	background-color: black;
+	width: 100%;
+	height: 100%;
+	opacity: .8;
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: flex;
+	align-items: center;
+}
+#overlay-template i {
+	color: #fff;
+	cursor: pointer;
+}
+.commands-list {
+	margin: 0 auto;
+}
+.commands-list > i {
+	font-size: 1.5em;
+	padding: 0px 10px;
+	text-align: center;
+	width: 40px;
+	line-height: 20px;
+	-webkit-transition: font-size .2s;
+	-moz-transition: font-size .2s;
+	-o-transition: font-size .2s;
+	transition: font-size .2s;
+}
+.commands-list > i:hover {
+	font-size: 1.7em;
+	
+}
+#overlay-template .close-btn {
+	position: absolute;
+	top: 3px;
+	right: 3px;
+}
+.video-question-play {
+	cursor: pointer;
+}
+
+/* Video info layer */
+#info-container .content-container {
+	min-height: 100px;
+	position: relative;
+}
+#video-stats .stats-icon {
+	font-size: 24px;
+	vertical-align: middle;
+}
+#video-stats .stats-val {
+	font-weight: 700;
+	margin: 0px 25px 0px 5px;
+	vertical-align: middle;
+}
+#video-wub {
+	cursor: pointer;
+}
+#video-wub:hover {
+	color: tomato;
+}
+#video-stats {
+	width: 60%;
+	float: left;
+}
+#video-categories {
+	width: 40%;
+	float: right;
+	text-align: right;
+}
+#video-categories > span {
+	border-width: 1px;
+	border-style: solid;
+	border-radius: 5px;
+	padding: 5px;
+	color: #59a0b7;
+	background: #fff;
+	line-height: 35px;
+}
+
+/* Interaction layer */
+#comments {
+	min-height: 850px;
+	background-color: #fff;
+}
+#comments-header {
+	margin-bottom: 30px;
+}
+#comments-header > i {
+	margin: 20px;
+}
+#comments-header > #comments-icon {
+	float: left;
+	font-size: 20px;
+}
+#comments-header > #comments-help {
+	float: right;
+	font-size: 16px;
+}
+#comments-header-tabs {
+	font-size: 14px;
+	display: inline-block;
+}
+#comments-header-tabs ul {
+	padding: 0px;
+	margin: 0px;
+}
+#comments-header-tabs ul > li {
+	display: inline;
+	text-align: center;
+	cursor: pointer;
+	margin: 0px 5px;
+}
+#comments-header-tabs li > a {
+	display: inline-block;
+	width:100px;
+	margin: 0;
+	text-decoration: none;
+	padding: 15px 0px 10px;
+	font-weight: 700;
+	color: #888;
+	vertical-align: bottom;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+#comments-header-tabs li:hover > a {
+	color: #666;
+}
+#comments-header-tabs li.active > a {
+	color: #333 !important;
+}
+#comments-header-tabs hr {
+	width: 110px;
+	background: tomato;
+	border: none;
+	height: 2px;
+	margin: 0;
+	transition: .4s ease-in-out;
+}
+.question-ref-content {
+	padding: 10px 0px 30px;
+	display: none;
+	width: 80%;
+	margin: 0 auto;
+	text-align: center;
+}
+.question-ref-header {
+	display: inline-block;
+	padding-bottom: 5px;
+}
+.question-ref-header > .user {
+	display: inline;
+}
+.account-img {
+	border-radius: 50%;
+	width: 50px;
+	height: 50px;
+}
+#post-container {
+	margin: 0;
+}
+#post-container > div:first-child { /* Current user image */
+	float: left;
+	text-align: center;
+}
+#post-container textarea {
+	height: 50px;
+	min-height: 50px;
+	max-height: 150px;
+	width: 100%;
+}
+.user-comment {
+	margin: 0px;
+	padding: 10px 0px;
+}
+.user-comment:hover {
+	background: #efefef;
+}
+.user-comment > .comment-voter {
+	text-align: center;
+	color: #888;
+}
+.user-comment > .comment-voter > i {
+	font-size: 16px;
+	cursor: pointer;
+}
+.user-comment > .comment-voter > i:hover {
+	color: #666;
+}
+.user-comment > .comment-img {
+	text-align: center;
+}
+.user-comment-header {
+	display: inline-block;
+}
+.user-comment-header > .user {
+	display: inline;
+}
+.user-comment-header > .date-posted {
+	display: inline;
+	font-size: 10px;
+	color: #888;
+	margin-left: 5px;
+}
+.user-comment > .comment-actions {
+	text-align: center;
+}
+.user-comment > .comment-actions > i {
+	color: #888;
+	cursor: pointer;
+	padding: 5px 0px;
+}
+.user-comment > .comment-actions > i:hover {
+	color: #666;
+}
+.user-comment.reply .account-img {
+	width: 40px;
+	height: 40px;
+}
+.user-comment.reply .comment-voter > i {
+	font-size: 14px;
+}
+.user-comment.reply .comment-vote-count {
+	font-size: 11px;
+}
+
+/* Footer */
+#footer {
+	height: 100px;
+	margin-top: 20px;
+	padding: 20px;
+	background-color: #efefef;
+	border-top: 1px solid #e0e0e0;
+}
+#footer-content {
+	width: 70%;
+	margin: 0 auto;
+	text-align: center;
+}
+#footer #social-icons i {
+	cursor: pointer;
+	padding: 0px 5px;
+	font-size: 1.2em;
+}
+#footer #social-icons i[class*="facebook"]:hover {
+	color: #3b5998;
+}
+#footer #social-icons i[class*="twitter"]:hover {
+	color: #00aced;
+}
+#footer #social-icons i[class*="google-plus"]:hover {
+	color: #dd4b39;
+}
+#footer #social-icons i[class*="youtube"]:hover {
+	color: #e62117;
+}
+
+/* Social media extensions */
+.twitter-colour {
+	color: #00aced;
+}
+.facebook-colour {
+	color: #3b5998;
+}
+.video-camera-colour {
+	color: tomato;
+}
+.pencil-colour {
+	color: #0da00c;
+}

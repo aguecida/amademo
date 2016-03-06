@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Neil deGrasse Tyson</title>
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,300" rel="stylesheet" type="text/css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+		<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+		<script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+		<link rel="stylesheet" href="stylesheets/style.css">
+		<script type="text/javascript" src="javascripts/watch.js"></script>
+	</head>
+	<body>
+		<div id="header">
+			<div class="container">
+				<div id="logo">yidio</div>
+				<div id="user-controls">
+					<div id="user-account" class="dropdown">
+						<img id="account-img" class="dropdown-toggle" data-toggle="dropdown" src="images/harvey.png" />
+						<ul class="dropdown-menu" aria-labelledby="account-img">
+					    	<li><a href="#">Profile</a></li>
+					    	<li><a href="#">Settings</a></li>
+					    	<li role="separator" class="divider"></li>
+					    	<li><a href="#">Sign out</a></li>
+					  	</ul>
+					</div>
+					<div id="search">
+						<i class="fa fa-search search-input"></i>
+						<input type="text" class="search-input" placeholder="Search Yidio..." />
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="container">
+			<div id="header-container" class="row">
+				<div class="col-md-8">
+					<div id="video-title">
+						<h2>Neil deGrasse Tyson</h2>
+						<span>#askneil</span>
+					</div>
+					<div id="sharable">
+						<button type="button" class="btn btn-sm share share-facebook">
+							<i class="fa fa-facebook-square"></i> Share
+						</button>
+						<button type="button" class="btn btn-sm share share-twitter">
+							<i class="fa fa-twitter"></i> Tweet
+						</button>
+					</div>
+				</div>
+			</div>
+			<div id="presentation-container" class="row">
+				<div id="video-container" class="col-md-8">
+					<div>
+						<div id="video"></div>
+						<!--<iframe id="video" src="https://www.youtube.com/embed/0VHmvYqxDtA?showinfo=0&autoplay=true" frameborder="0" allowfullscreen></iframe>-->
+					</div>
+				</div>
+				<div id="questions-container" class="col-md-4">
+					<ul id="questions" class="content-container">
+						<li class="question">
+							<div class="media-channel">
+								<i class="fa fa-twitter"></i>
+							</div>
+							<div>
+								<div class="content">
+									<p class="user">@harveyspecter</p>
+									<p>Who's the best closer in NYC? #askneil</p>
+								</div>
+							</div>
+							<div class="commands" title="Actions">
+								<i class="fa fa-ellipsis-h"></i>
+							</div>
+						</li>
+						<li class="question">
+							<div class="media-channel">
+								<i class="fa fa-video-camera"></i>
+							</div>
+							<div>
+								<div class="content">
+									<p class="user">legitlawyer99</p>
+									<p><a class="video-question-play">Play video</a></p>
+								</div>
+							</div>
+							<div class="commands" title="Actions">
+								<i class="fa fa-ellipsis-h"></i>
+							</div>
+						</li>
+						<li class="question">
+							<div class="media-channel">
+								<i class="fa fa-twitter"></i>
+							</div>
+							<div>
+								<div class="content">
+									<p class="user">@yougotlittup</p>
+									<p>What do you consider to be the universe's greatest work of visual art? #askneil</p>
+								</div>
+							</div>
+							<div class="commands" title="Actions">
+								<i class="fa fa-ellipsis-h"></i>
+							</div>
+						</li>
+						<li class="question">
+							<div class="media-channel">
+								<i class="fa fa-pencil"></i>
+							</div>
+							<div>
+								<div class="content">
+									<p class="user">rachelzane</p>
+									<p>How do you prefer to experience art</p>
+								</div>
+							</div>
+							<div class="commands" title="Actions">
+								<i class="fa fa-ellipsis-h"></i>
+							</div>
+						</li>
+						<li class="question">
+							<div class="media-channel">
+								<i class="fa fa-facebook"></i>
+							</div>
+							<div>
+								<div class="content">
+									<p class="user">Jessica Pearson</p>
+									<p>Do you feel that most good art can be strengthened by mathematic rules? If so do you think computers will one day create better art then us?</p>
+								</div>
+							</div>
+							<div class="commands" title="Actions">
+								<i class="fa fa-ellipsis-h"></i>
+							</div>
+						</li>
+						<li class="question">
+							<div class="media-channel">
+								<i class="fa fa-twitter"></i>
+							</div>
+							<div>
+								<div class="content">
+									<p class="user">@donna</p>
+									<p>Here's a question sent from Twitter #askneil</p>
+								</div>
+							</div>
+							<div class="commands" title="Actions">
+								<i class="fa fa-ellipsis-h"></i>
+							</div>
+						</li>
+						<li class="question">
+							<div class="media-channel">
+								<i class="fa fa-twitter"></i>
+							</div>
+							<div>
+								<div class="content">
+									<p class="user">@harold</p>
+									<p>Here's a question sent from Twitter #askneil</p>
+								</div>
+							</div>
+							<div class="commands" title="Actions">
+								<i class="fa fa-ellipsis-h"></i>
+							</div>
+						</li>
+						<li class="question">
+							<div class="media-channel">
+								<i class="fa fa-twitter"></i>
+							</div>
+							<div>
+								<div class="content">
+									<p class="user">@scottie2hottie</p>
+									<p>Here's a question sent from Twitter #askneil</p>
+								</div>
+							</div>
+							<div class="commands" title="Actions">
+								<i class="fa fa-ellipsis-h"></i>
+							</div>
+						</li>
+						<li class="question">
+							<div class="media-channel">
+								<i class="fa fa-twitter"></i>
+							</div>
+							<div>
+								<div class="content">
+									<p class="user">@hardman</p>
+									<p>Here's a question sent from Twitter #askneil</p>
+								</div>
+							</div>
+							<div class="commands" title="Actions">
+								<i class="fa fa-ellipsis-h"></i>
+							</div>
+						</li>
+						<li class="question">
+							<div class="media-channel">
+								<i class="fa fa-twitter"></i>
+							</div>
+							<div>
+								<div class="content">
+									<p class="user">@forstman</p>
+									<p>Here's a question sent from Twitter #askneil</p>
+								</div>
+							</div>
+							<div class="commands" title="Actions">
+								<i class="fa fa-ellipsis-h"></i>
+							</div>
+						</li>
+						<li class="question">
+							<div class="media-channel">
+								<i class="fa fa-twitter"></i>
+							</div>
+							<div>
+								<div class="content">
+									<p class="user">@sidwell</p>
+									<p>Here's a question sent from Twitter #askneil</p>
+								</div>
+							</div>
+							<div class="commands" title="Actions">
+								<i class="fa fa-ellipsis-h"></i>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div id="info-container" class="row">
+				<div class="col-md-8">
+					<div id="video-stats">
+						<span title="Date published">
+							<i class="fa fa-clock-o stats-icon"></i>
+							<span class="stats-val">Sept 16 1991</span>
+						</span>
+						<span title="Views">
+							<span class="glyphicon glyphicon-eye-open stats-icon" aria-hidden="true"></span>
+							<span class="stats-val">11,458</span>
+						</span>
+						<span>
+							<i id="video-wub" class="fa fa-heart-o stats-icon" data-toggle="tooltip" data-placement="bottom" title="Wub it!"></i>
+							<span class="stats-val" title="Wubs">285</span>
+						</span>
+					</div>
+					<div id="video-categories">
+						<span>#art</span>
+						<span>#science</span>
+						<span>#education</span>
+					</div>
+				</div>
+			</div>
+			<div id="interaction-container" class="row">
+				<div id="comments-container" class="col-md-8">
+					<div id="comments" class="content-container">
+						<div id="comments-header">
+							<i id="comments-icon" class="fa fa-comments"></i>
+							<div id="comments-header-tabs">
+								<ul>
+									<li class="general-tab active"><a>General</a></li>
+									<hr>
+								</ul>
+							</div>
+							<i id="comments-help" class="fa fa-question-circle" data-toggle="tooltip" data-placement="right" data-html="true" title="To comment on a specific question, click on one above, then click on the <i class='fa fa-comments'></i> icon"></i>
+						</div>
+						<div>
+						    <div class="question-ref-content">
+						    	<div>
+							    	<div class="question-ref-header">
+							    		<div class="user"></div>
+							    		<span>via</span>
+							    		<i class="fa fa-twitter twitter-colour"></i>
+							    	</div>
+							    	<div class="question-ref-body"></div>
+						    	</div>
+						    </div>
+						</div>
+						<div id="post-container" class="row">
+							<div class="col-md-1"></div>
+							<div class="col-md-1">
+								<img class="account-img" src="images/harvey.png" />
+							</div>
+							<div class="col-md-9">
+								<textarea placeholder="Add a comment..."></textarea>
+								<button type="button" class="btn btn-sm btn-primary post-btn">Post</button>
+							</div>
+						</div>
+						<hr>
+						<div class="user-comment-section active">
+							<div class="row user-comment">
+								<div class="col-md-1 comment-voter">
+									<i class="fa fa-chevron-up comment-up-vote"></i>
+									<div class="comment-vote-count">256</div>
+									<i class="fa fa-chevron-down comment-down-vote"></i>
+								</div>
+								<div class="col-md-1 comment-img">
+									<img class="account-img" src="images/mike.png" />
+								</div>
+								<div class="col-md-9">
+									<div class="user-comment-header">
+										<div class="user">legitlawyer99</div>
+										<span class="date-posted">2 hours ago</span>
+									</div>
+									<div class="comment-content">First comment woohoo</div>
+								</div>
+								<div class="col-md-1 comment-actions">
+									<i class="fa fa-reply" title="Reply"></i>
+									<br>
+									<i class="fa fa-flag" title="Report"></i>
+								</div>
+							</div>
+							<div class="row user-comment">
+								<div class="col-md-1 comment-voter">
+									<i class="fa fa-chevron-up comment-up-vote"></i>
+									<div class="comment-vote-count">53</div>
+									<i class="fa fa-chevron-down comment-down-vote"></i>
+								</div>
+								<div class="col-md-1 comment-img">
+									<img class="account-img" src="images/louis.png" />
+								</div>
+								<div class="col-md-9">
+									<div class="user-comment-header">
+										<div class="user">Louis Litt</div>
+										<span class="date-posted">8 hours ago</span>
+									</div>
+									<div class="comment-content">Mudding anyone?</div>
+								</div>
+								<div class="col-md-1 comment-actions">
+									<i class="fa fa-reply" title="Reply"></i>
+									<br>
+									<i class="fa fa-flag" title="Report"></i>
+								</div>
+							</div>
+							<div class="row user-comment reply">
+								<div class="col-md-1">
+								</div>
+								<div class="col-md-1 comment-voter">
+									<i class="fa fa-chevron-up comment-up-vote"></i>
+									<div class="comment-vote-count">8</div>
+									<i class="fa fa-chevron-down comment-down-vote"></i>
+								</div>
+								<div class="col-md-1 comment-img">
+									<img class="account-img" src="images/mike.png" />
+								</div>
+								<div class="col-md-8">
+									<div class="user-comment-header">
+										<div class="user">legitlawyer99</div>
+										<span class="date-posted">3 hours ago</span>
+									</div>
+									<div class="comment-content">Harvey?</div>
+								</div>
+								<div class="col-md-1 comment-actions">
+									<i class="fa fa-reply" title="Reply"></i>
+									<br>
+									<i class="fa fa-flag" title="Report"></i>
+								</div>
+							</div>
+							<div class="row user-comment reply">
+								<div class="col-md-1">
+								</div>
+								<div class="col-md-1 comment-voter">
+									<i class="fa fa-chevron-up comment-up-vote"></i>
+									<div class="comment-vote-count">21</div>
+									<i class="fa fa-chevron-down comment-down-vote"></i>
+								</div>
+								<div class="col-md-1 comment-img">
+									<img class="account-img" src="images/harvey.png" />
+								</div>
+								<div class="col-md-8">
+									<div class="user-comment-header">
+										<div class="user">Harvey Specter</div>
+										<span class="date-posted">12 mins ago</span>
+									</div>
+									<div class="comment-content">I refuse to answer that on the grounds that I don't want to</div>
+								</div>
+								<div class="col-md-1 comment-actions">
+									<i class="fa fa-reply" title="Reply"></i>
+									<br>
+									<i class="fa fa-flag" title="Report"></i>
+								</div>
+							</div>
+							<div class="row user-comment">
+								<div class="col-md-1 comment-voter">
+									<i class="fa fa-chevron-up comment-up-vote"></i>
+									<div class="comment-vote-count">587</div>
+									<i class="fa fa-chevron-down comment-down-vote"></i>
+								</div>
+								<div class="col-md-1 comment-img">
+									<img class="account-img" src="images/donna.png" />
+								</div>
+								<div class="col-md-9">
+									<div class="user-comment-header">
+										<div class="user">Donna</div>
+										<span class="date-posted">4 days ago</span>
+									</div>
+									<div class="comment-content">Here's a comment...</div>
+								</div>
+								<div class="col-md-1 comment-actions">
+									<i class="fa fa-reply" title="Reply"></i>
+									<br>
+									<i class="fa fa-flag" title="Report"></i>
+								</div>
+							</div>
+							<div class="row user-comment reply">
+								<div class="col-md-1">
+								</div>
+								<div class="col-md-1 comment-voter">
+									<i class="fa fa-chevron-up comment-up-vote"></i>
+									<div class="comment-vote-count">4</div>
+									<i class="fa fa-chevron-down comment-down-vote"></i>
+								</div>
+								<div class="col-md-1 comment-img">
+									<img class="account-img" src="images/jessica.png" />
+								</div>
+								<div class="col-md-8">
+									<div class="user-comment-header">
+										<div class="user">Jessica Pearson</div>
+										<span class="date-posted">6 hours ago</span>
+									</div>
+									<div class="comment-content">And now here's a reply</div>
+								</div>
+								<div class="col-md-1 comment-actions">
+									<i class="fa fa-reply" title="Reply"></i>
+									<br>
+									<i class="fa fa-flag" title="Report"></i>
+								</div>
+							</div>
+							<div class="row user-comment">
+								<div class="col-md-1 comment-voter">
+									<i class="fa fa-chevron-up comment-up-vote"></i>
+									<div class="comment-vote-count">34</div>
+									<i class="fa fa-chevron-down comment-down-vote"></i>
+								</div>
+								<div class="col-md-1 comment-img">
+									<img class="account-img" src="images/scottie.png" />
+								</div>
+								<div class="col-md-9">
+									<div class="user-comment-header">
+										<div class="user">scottie</div>
+										<span class="date-posted">2 months ago</span>
+									</div>
+									<div class="comment-content">...and the final comment</div>
+								</div>
+								<div class="col-md-1 comment-actions">
+									<i class="fa fa-reply" title="Reply"></i>
+									<br>
+									<i class="fa fa-flag" title="Report"></i>
+								</div>
+							</div>
+						</div>
+						<div class="user-comment-section" style="display:none;">
+							<div class="row user-comment">
+								<div class="col-md-1 comment-voter">
+									<i class="fa fa-chevron-up comment-up-vote"></i>
+									<div class="comment-vote-count">43</div>
+									<i class="fa fa-chevron-down comment-down-vote"></i>
+								</div>
+								<div class="col-md-1 comment-img">
+									<img class="account-img" src="images/rachel.png" />
+								</div>
+								<div class="col-md-9">
+									<div class="user-comment-header">
+										<div class="user">rachelzane</div>
+										<span class="date-posted">34 mins ago</span>
+									</div>
+									<div class="comment-content">Comment #1</div>
+								</div>
+								<div class="col-md-1 comment-actions">
+									<i class="fa fa-reply" title="Reply"></i>
+									<br>
+									<i class="fa fa-flag" title="Report"></i>
+								</div>
+							</div>
+							<div class="row user-comment">
+								<div class="col-md-1 comment-voter">
+									<i class="fa fa-chevron-up comment-up-vote"></i>
+									<div class="comment-vote-count">173</div>
+									<i class="fa fa-chevron-down comment-down-vote"></i>
+								</div>
+								<div class="col-md-1 comment-img">
+									<img class="account-img" src="images/jessica.png" />
+								</div>
+								<div class="col-md-9">
+									<div class="user-comment-header">
+										<div class="user">Jessica Pearson</div>
+										<span class="date-posted">5 hours ago</span>
+									</div>
+									<div class="comment-content">Comment #2</div>
+								</div>
+								<div class="col-md-1 comment-actions">
+									<i class="fa fa-reply" title="Reply"></i>
+									<br>
+									<i class="fa fa-flag" title="Report"></i>
+								</div>
+							</div>
+							<div class="row user-comment">
+								<div class="col-md-1 comment-voter">
+									<i class="fa fa-chevron-up comment-up-vote"></i>
+									<div class="comment-vote-count">12</div>
+									<i class="fa fa-chevron-down comment-down-vote"></i>
+								</div>
+								<div class="col-md-1 comment-img">
+									<img class="account-img" src="images/donna.png" />
+								</div>
+								<div class="col-md-9">
+									<div class="user-comment-header">
+										<div class="user">Donna</div>
+										<span class="date-posted">1 month ago</span>
+									</div>
+									<div class="comment-content">Comment #3</div>
+								</div>
+								<div class="col-md-1 comment-actions">
+									<i class="fa fa-reply" title="Reply"></i>
+									<br>
+									<i class="fa fa-flag" title="Report"></i>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="footer">
+			<div id="footer-content">
+				<p>&#169; 2016 Yidio Inc.</p>
+				<div id="social-icons">
+					<i class="fa fa-facebook"></i>
+					<i class="fa fa-twitter"></i>
+					<i class="fa fa-youtube-play"></i>
+					<i class="fa fa-google-plus"></i>
+				</div>
+			</div>
+		</div>
+		<div id="overlay-template" class="noselect hide">
+			<div class="commands-list">
+				<i class="play fa fa-play"></i>
+				<i class="like fa fa-heart"></i>
+				<i class="comment fa fa-comments"></i>
+			</div>
+			<i class="fa fa-close close-btn"></i>
+		</div>
+
+		<script>
+			// Video player init and helpers
+			var tag = document.createElement('script');
+
+		  	tag.src = "https://www.youtube.com/iframe_api";
+		  	var firstScriptTag = document.getElementsByTagName('script')[0];
+		  	firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+		  	var player;
+		  	function onYouTubeIframeAPIReady() {
+		    	player = new YT.Player('video', {
+		      		height: '390',
+		      		width: '640',
+		      		videoId: '0VHmvYqxDtA',
+		      		events: {
+            			'onReady': onPlayerReady
+            		}
+		    	});
+		  	}
+
+		  	function onPlayerReady(event) {
+        		event.target.playVideo();
+      		}
+
+      		function seekTo(sec) {
+      			player.seekTo(sec, true);
+      		}
+		</script>
+
+	</body>
+</html>
